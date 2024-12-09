@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="NovaDespesa.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../../menu/menu.css">
+    <script src="../../../menu/menu.js"></script>
+
+    <title>EasyTravel</title>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img onclick="openSidebar()" class="headerIcone" src="../../../assets/MenuIcon.png" alt="Icone menu">
+        <img class="headerIcone" src="../../../assets/EasyTravelLogo.png" alt="Logo" onclick="redirectTo('../../../index.html')">
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <span class="closebtn" onclick="closeSidebar()">&times;</span>
+        <a href="../../../index.html">Sair</a>
+    </div>
+
+
+    <section class="d-flex flex-column pl-3 pt-4 pb-4" style="border: 0.2vh #7E7E7E solid;">
+        <h3 style="text-align: center; padding-bottom: 2vh;">Nova Despesa</h3>
+
+        <div class="d-flex flex-column" style="border-radius: 1vh; padding: 1vh; margin-right: 2vh;">
+            <div class="form-group">
+                <label>Descrição</label>
+                <input type="text" class="form-control" id="" placeholder="Breve descrição da despesa">
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Grupo da despesa</label>
+                <select class="form-control form-control-sm" aria-label=".form-select-sm example">
+                    <option selected>Selecione o Grupo da despesa</option>
+                    <option value="1">Transporte</option>
+                    <option value="2">Alimentação</option>
+                    <option value="3">Hospedagem</option>
+                </select>
+            </div>
+            
+            <div class="form-group mt-3">   
+                <label>Tipo da despesa</label>
+                <select class="form-control">
+                    <option selected>Selecione o Tipo da despesa</option>
+                    <option value="1">Uber</option>
+                    <option value="2">Ônibus</option>
+                    <option value="3">Passagem aérea</option>
+                    <option value="3">Gasolina</option>
+                    <option value="3">Pedágio</option>
+                </select>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Valor</label>
+                <input type="number" class="form-control" id="" placeholder="R$ 0,00">
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Data da despesa</label>
+                <input type="date" class="form-control" id="" placeholder="25/10/2024">
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Descrição</label>
+                <input class="form-control form-control-sm" id="" type="file" style="height: 4.5vh;">
+            </div>
+        </div>
+    </section>
+
+    <footer class="d-flex justify-content-center pt-2" style="text-align: center;">
+        <p class="col-6" style="cursor: pointer;" onclick="redirectTo('../ViagemOperador/ViagemOperador.html')">Cancelar</p>
+        <p class="col-6" style="color: #027EFA; cursor: pointer;" onclick="redirectTo('../ViagemOperador/ViagemOperador.html')">Salvar</p>
+    </footer>
+</body>
+</html>

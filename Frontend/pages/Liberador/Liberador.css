@@ -1,0 +1,126 @@
+/* Menu */
+.linkMenu{
+    text-decoration: none;
+}
+
+.tituloPagina{
+    padding-left: 2vh;
+}
+
+.header{
+    padding: 1vh;
+    padding-right: 3vh;
+    border-bottom: 0.3vh black solid;
+    display: flex;
+}
+
+.headerIcone{
+    width: 8vh;
+    height: 8vh;
+    cursor: pointer;
+}
+
+.headerTitle{
+    padding-top: 1.4vh;
+    font-size: 4vh
+}
+
+.form-outline{
+    padding-top: 1.4vh;
+    margin-left: 15vw;
+    width: 35vw;
+    border-radius: 5vh;
+}
+
+.menuLateral{
+    width: 13vw;
+    padding-left: 1.4vw;
+}
+
+.imagemMenu{
+    width: 6vh;
+    height: 6vh;
+}
+
+.ancorasMenu{
+    font-size: 2.5vh;
+    color: black;
+}
+
+.imagemSair{
+    width: 5vh;
+    height: 5vh;
+}
+
+.conteudo{
+    width: 100vw;
+}
+
+.areaTopo{
+    border-bottom: #707070 0.3vh solid; 
+    height: 10vh; 
+    padding-left: 2vh;
+    padding-top: 0.1vh;
+    padding-right: 2vh;
+}
+
+
+/* Cards */
+.linhaCards {
+    display: flex;
+    justify-content: left;
+    gap: 4vh;
+    margin-left: 4vh;
+}
+
+.cardEmpresa {
+    border: 0.3vh solid #7E7E7E;
+    border-radius: 4vh;
+    padding: 4vh;
+    text-align: center;
+    width: 13vw;
+    height: 26vh;
+}
+
+.cardUsuario {
+    border: 0.3vh solid #7E7E7E;
+    border-radius: 4vh;
+    padding: 4vh;
+    width: 13vw;
+    height: 26vh;
+}
+
+.cardTitulo {
+    font-weight: bold;
+    font-size: 3.5vh;
+}
+
+.cardTexto {
+    font-size: 2.6vh;
+    color: rgb(0, 0, 0);
+}
+
+.cardIcones {
+    display: flex;
+    justify-content: right;
+    gap: 2vh;
+    margin-top: 2vh;
+}
+
+.cardIconesUsu {
+    display: flex;
+    justify-content: right;
+    gap: 2vh;
+    margin-top: 1vh;
+}
+
+.icone{
+    width: 1.8vw;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.empresaUsuario{
+    margin-top: -2vh;
+}
+

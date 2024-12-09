@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Empresas.css">
+    <link rel="stylesheet" href="../Liberador.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <script src="Empresas.js"></script>
+
+    <title>EasyTravel</title>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img class="headerIcone" src="../../../assets/EasyTravelLogo.png" alt="Logo" onclick="redirectTo('../../../index.html')">
+        <h2 class="headerTitle" onclick="redirectTo('../../../index.html')">Easy Travel</h2>
+
+        <div class="searchBar">
+            <div class="form-outline" data-mdb-input-init>
+                <input type="search" id="form1" class="form-control" placeholder="Pesquisar Viagens" aria-label="Search" style="background-color: #D9D9D9; height: 6vh; font-size: 2.5vh;"/>
+            </div>
+        </div>
+    </header>
+
+    <section class="d-flex">
+        <div class="menuLateral d-flex flex-column pt-4" style="border-right: #707070 0.3vh solid; height: 89.8vh; width: 33vh;">
+            <a href="../Viagens/Viagens.html" class="d-flex align-items-center menu-item">
+                <img class="imagemMenu mt-1" src="../../../assets/viagensIcone.png" alt="Viagens Icone">
+                <h2 class="ancorasMenu pl-4">Viagens</h2>
+            </a>
+        
+            <a href="../Empresas/Empresas.html" class="d-flex align-items-center menu-item" style="text-decoration: none;">
+                <img class="imagemMenu mt-3" src="../../../assets/empresasSelecionadoIcone.png" alt="Empresas Icone">
+                <h2 class="ancorasMenu pl-4 pt-4" style="color: #027EFA; margin-top: 1.2vh;">Empresas</h2>
+            </a>
+
+            <a href="../Despesas/Despesas.html" class="d-flex align-items-center menu-item" style="text-decoration: none;">
+                <img class="imagemMenu mt-3" src="../../../assets/despesasIcone.png" alt="Despesas Icone">
+                <h2 class="ancorasMenu pl-4 pt-4">Despesas</h2>
+            </a>
+        
+            <a href="../Usuarios/Usuarios.html" class="d-flex align-items-center menu-item" style="text-decoration: none;">
+                <img class="imagemMenu mt-3" src="../../../assets/usuariosIcone.png" alt="Usuários Icone">
+                <h2 class="ancorasMenu pl-4 pt-4" style="text-decoration: none;">Usuários</h2>
+            </a>
+
+            <a href="../../../index.html" class="linkMenu d-flex align-items-center menu-item" style="margin-top: 43vh; text-decoration: none;">
+                <img class="imagemSair" src="../../../assets/sairIcone.png " alt="Usuários Icone">
+                <h2 class="ancorasMenu pl-4 mt-2">Sair</h2>
+            </a>
+        </div>        
+
+        <div class="conteudo">
+            <div class="areaTopo d-flex align-items-center justify-content-between">
+                <h2>Empresas</h2>
+                <button class="btn btn-primary mr-2" onclick="redirectTo('./NovaEmpresa/NovaEmpresa.html')">+ Novo</button>
+            </div>
+
+            <div class="cards container mt-4">
+                <div class="linhaCards">
+                    <div class="cardEmpresa">
+                        <h5 class="cardTitulo">Mc Donald's</h5>
+                        <p class="cardTexto">McDonald's Corporation</p>
+                        <div class="cardIcones">
+                            <img src="../../../assets/EditIcon.png" class="icone" alt="Editar" onclick="redirectTo('./EditarEmpresa/EditarEmpresa.html')">
+                            <img src="../../../assets/DeleteIcon.png" class="iconeDeletar" alt="Deletar">
+                        </div>
+                    </div>
+                    <div class="cardEmpresa">
+                        <h5 class="cardTitulo">Easy Travel</h5>
+                        <p class="cardTexto">Easy Travel Company</p>
+                        <div class="cardIcones">
+                            <img src="../../../assets/EditIcon.png" class="icone" alt="Editar" onclick="redirectTo('./EditarEmpresa/EditarEmpresa.html')">
+                            <img src="../../../assets/DeleteIcon.png" class="iconeDeletar" alt="Deletar">
+                        </div>
+                    </div>
+                    <div class="cardEmpresa">
+                        <h5 class="cardTitulo">EXP</h5>
+                        <p class="cardTexto">Exp Dom Enterprise</p>
+                        <div class="cardIcones">
+                            <img src="../../../assets/EditIcon.png" class="icone" alt="Editar" onclick="redirectTo('./EditarEmpresa/EditarEmpresa.html')">
+                            <img src="../../../assets/DeleteIcon.png" class="iconeDeletar" alt="Deletar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmDeleteModalLabel">Confirmar Exclusão</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Tem certeza de que deseja excluir esta Empresa?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger" id="deleteExpenseButton">Deletar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

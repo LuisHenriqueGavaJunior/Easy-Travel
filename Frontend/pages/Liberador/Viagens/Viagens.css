@@ -1,0 +1,21 @@
+.menuLateral{
+    padding-top: -5vh;
+}
+
+.cardIconesUsu{
+    padding-top: 2vh;
+}
+
+.iconeDeletar{
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.modal{
+    margin-top: 30vh;
+}
+
+.headerTitle{
+    cursor: pointer;
+}

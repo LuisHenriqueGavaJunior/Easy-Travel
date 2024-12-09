@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="EditarViagem.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../../../menu/menu.css">
+    <script src="../../../../menu/menu.js"></script>
+
+    <title>EasyTravel</title>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img onclick="openSidebar()" class="headerIcone" src="../../../../assets/MenuIcon.png" alt="Icone menu">
+        <img class="headerIcone" src="../../../../assets/EasyTravelLogo.png" alt="Logo" onclick="redirectTo('../../../../index.html')">
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <span class="closebtn" onclick="closeSidebar()">&times;</span>
+        <a href="../../../../index.html">Sair</a>
+    </div>
+
+
+    <section class="d-flex flex-column pl-3 pt-4 pb-4" style="border: 0.2vh #7E7E7E solid;">
+        <h3 style="text-align: center; padding-bottom: 2vh;">Editar Viagem</h3>
+
+        <div class="d-flex flex-column" style="border-radius: 1vh; padding: 1vh; margin-right: 2vh;">
+            <div class="form-group">
+                <label>Descrição</label>
+                <input type="text" class="form-control" id="" placeholder="Breve descrição da viagem">
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Colaborador</label>
+                <select class="form-control form-control-sm" aria-label=".form-select-sm example">
+                    <option selected>Selecione o colaborador que realizará a viagem</option>
+                    <option value="1">Juninho da Silva</option>
+                    <option value="2">Saraiva Sírio</option>
+                    <option value="3">Elias Elizeu</option>
+                    <option value="3">Jeremias</option>
+                </select>
+            </div>
+            
+            <div class="form-group mt-3">   
+                <label>Empresa</label>
+                <select class="form-control">
+                    <option selected>Selecione a empresa do colaborador</option>
+                    <option value="1">Mc Donald's</option>
+                    <option value="2">EXP</option>
+                    <option value="3">Easy Travel</option>
+                </select>
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Saldo disponível</label>
+                <input type="number" class="form-control" id="" placeholder="R$ 0,00">
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Data de início</label>
+                <input type="date" class="form-control" id="" placeholder="25/10/2024">
+            </div>
+
+            <div class="form-group mt-3">
+                <label>Término previsto</label>
+                <input type="date" class="form-control" id="" placeholder="25/10/2024">
+            </div>
+
+            <div class="form-group mt-3">   
+                <label>Status</label>
+                <select class="form-control">
+                    <option selected>Liberado</option>
+                    <option value="1">Em andamento</option>
+                    <option value="2">Finalizado</option>
+                    <option value="3">Aprovado</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <footer class="d-flex justify-content-center pt-2" style="text-align: center;">
+        <p class="col-6" style="cursor: pointer;" onclick="redirectTo('../Viagens.html')">Cancelar</p>
+        <p class="col-6" style="color: #027EFA; cursor: pointer;" onclick="redirectTo('../Viagens.html')">Salvar</p>
+    </footer>
+</body>
+</html>

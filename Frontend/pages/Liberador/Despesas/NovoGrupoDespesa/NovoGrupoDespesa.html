@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="NovoGrupoDespesa.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../../../menu/menu.css">
+    <script src="../../../../menu/menu.js"></script>
+
+    <title>EasyTravel</title>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img onclick="openSidebar()" class="headerIcone" src="../../../../assets/MenuIcon.png" alt="Icone menu">
+        <img class="headerIcone" src="../../../../assets/EasyTravelLogo.png" alt="Logo" onclick="redirectTo('../../../../index.html')">
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <span class="closebtn" onclick="closeSidebar()">&times;</span>
+        <a href="../../../../index.html">Sair</a>
+    </div>
+
+    <section class="d-flex flex-column pl-3 pt-4 pb-4" style="border: 0.2vh #7E7E7E solid; height: 84vh;">
+        <h3 style="text-align: center; padding-bottom: 2vh;">Novo Grupo de Despesa</h3>
+
+        <div class="d-flex flex-column" style="border-radius: 1vh; padding: 1vh; margin-right: 2vh;">
+            <div class="form-group">
+                <label>Descrição</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </section>
+
+    <footer class="d-flex justify-content-center pt-2" style="text-align: center;">
+        <p class="col-6" style="cursor: pointer;" onclick="redirectTo('../Despesas.html')">Cancelar</p>
+        <p class="col-6" style="color: #027EFA; cursor: pointer;" onclick="redirectTo('../Despesas.html')">Salvar</p>
+    </footer>
+</body>
+</html>

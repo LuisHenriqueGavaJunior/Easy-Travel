@@ -1,0 +1,123 @@
+.header{
+    padding: 1vh;
+    padding-right: 3vh;
+    border-bottom: 0.2vh black solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerIcone{
+    width: 5vh;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.titulo{
+    text-align: center; 
+    padding-bottom: 2vh;
+}
+
+.img-thumbnail{
+    width: 8vw;
+    height: 8vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.iconeEditar{
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+}
+
+.iconeDeletar{
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+}
+
+.botaoNovaDespesa {
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 50%; 
+    width: 7vh; 
+    height: 7vh;
+    font-size: 4vh; 
+    padding-bottom: 1vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-left: 80vw;
+    bottom: 2vh;
+    right: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botaoNovaDespesa:hover {
+    background-color: #0056b3; 
+}
+
+.botaoNovaDespesa:focus {
+    outline: none; 
+}
+
+.cardDespesa{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.despesaInfo{
+    font-weight: 400;
+}
+
+.dadoDespesaTexto{
+    font-weight: 400;
+}
+
+.img-thumbnail {
+    width: 15vh;
+    max-height: 15vh;
+}
+
+.despesa{
+    border-bottom: 0.2vh black solid; 
+    overflow-y: auto; 
+    max-height: 44vh;
+}
+
+@media (max-width: 985px) {
+    .img-thumbnail {
+        width: 15vh;
+        height: 15vh !important;
+    }
+
+    .despesaInfo{
+        font-size: 2vh;
+    }
+
+    .despesaTitulo{
+        font-size: 2vh;
+    }
+
+    #checkboxDespesa{
+        width: 1vh;
+    }
+
+    .dadoDespesaTexto{
+        font-size: 1rem;
+    }
+
+    .tituloDespesaTexto{
+        font-size: 1rem;
+    }
+
+    .titulo{
+        font-size: 1.6rem;
+    }
+
+    .despesa{
+        max-height: 39vh;
+    }
+}

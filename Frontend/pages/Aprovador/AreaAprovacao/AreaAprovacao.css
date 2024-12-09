@@ -1,0 +1,79 @@
+.header{
+    padding: 1vh;
+    padding-right: 3vh;
+    border-bottom: 0.2vh black solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerIcone{
+    width: 5vh;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.img-thumbnail{
+    width: 8vw;
+    height: 8vh;
+}
+
+.cardDespesa{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.despesaInfo{
+    font-weight: 400;
+}
+
+.dadoDespesaTexto{
+    font-weight: 400;
+}
+
+.img-thumbnail {
+    width: 15vh;
+    max-height: 15vh;
+    cursor: pointer;
+}
+
+.despesa{
+    border-bottom: 0.2vh black solid; 
+    overflow-y: auto; 
+    max-height: 44vh;
+}
+
+@media (max-width: 985px) {
+    .img-thumbnail {
+        width: 15vh;
+        max-height: 15vh;
+        cursor: pointer;
+    }
+
+    .despesaInfo{
+        font-size: 2vh;
+    }
+
+    .despesaTitulo{
+        font-size: 2vh;
+    }
+
+    #checkboxDespesa{
+        width: 1vh;
+    }
+
+    
+    .dadoDespesaTexto{
+        font-size: 1rem;
+    }
+
+    .tituloDespesaTexto{
+        font-size: 1rem;
+    }
+
+    .titulo{
+        font-size: 1.6rem;
+    }
+
+    .despesa{
+        max-height: 38vh;
+    }
+}

@@ -1,0 +1,14 @@
+.header{
+    padding: 1vh;
+    padding-right: 3vh;
+    border-bottom: 0.2vh black solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerIcone{
+    width: 5vh;
+    height: 5vh;
+    cursor: pointer;
+}
+

@@ -1,0 +1,132 @@
+.titulo {
+    font-size: 12vh;
+}
+
+.login {
+    margin-left: -10vh;
+}
+
+.formTitulo {
+    font-size: 7vh;
+}
+
+.form-group label {
+    font-weight: 700;
+    font-size: 3.4vh;
+}
+
+.form-group input {
+    width: 80vh; 
+    font-size: 2.5vh;
+    border-radius: 4vh;  
+    padding: 3vh;
+    border-color: #7E7E7E;
+    height: 9vh;
+    margin-bottom: -5vh;
+}
+
+button.btn-primary {
+    width: 35vh;
+    height: 8vh;
+    border-radius: 4vh; 
+    font-size: 4.6vh; 
+    padding: 0vh;
+}
+
+.suporte{
+    color: #027EFA;
+    cursor: pointer;
+}
+
+.senhaLabel{
+    margin-top: 7vh;
+}
+
+#errorMessage {
+    width: 50vh; 
+    padding: 10px;
+    font-size: 2vh;
+    margin-top: 48vh;
+    position: absolute;
+}
+
+@media (max-width: 985px) {
+    .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-6 {
+        width: 100%;
+        max-width: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-fluid {
+        width: 10vh !important;
+        height: 10vh !important;
+        margin-top: 2vh !important;
+    }
+
+    .titulo {
+        font-size: 3vh;
+        text-align: center; 
+        margin-bottom: 5vh !important;
+    }
+
+    .formTitulo {
+        font-size: 4vh;
+        text-align: center;
+        margin-top: -25vh !important;
+    }
+
+    .form-group input {
+        width: 80vw;
+        font-size: 2vh;
+        padding: 2vh;
+        height: 7vh;
+        margin-bottom: -1.4vh;
+    }
+
+    button.btn-primary {
+        width: 55vw;
+        font-size: 3vh;
+        padding: 0.8vh;
+        padding-top: -10vh;
+    }
+
+    .form-group label {
+        font-size: 1.8vh;
+        display: none;
+        padding-top: -10vh;
+        margin-top: 0vh;
+    }
+
+    .suporteAjuda{
+        width: 100vw;
+        justify-content: center;
+        margin-bottom: 2vh;
+    }
+
+    .suporte{
+        display: flex;
+        font-size: 2vh;
+    }
+
+    .suporteI{
+        font-size: 2vh;
+    }
+
+    .login {
+        margin-left: 0vh;
+    }
+
+    .botaoLogin{
+        margin-top: 4vh !important;
+    }
+
+    .senhaLabel{
+        margin-top: 2vh;
+    }
+}

@@ -1,0 +1,25 @@
+.imagemSair{
+    margin-top: -1vh;
+}
+
+.cards{
+    margin-left: 0px !important;
+}
+
+.icone{
+    margin-top: -0.4vh;
+}
+
+.iconeDeletar{
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.modal{
+    margin-top: 30vh;
+}
+
+.headerTitle{
+    cursor: pointer;
+}

@@ -1,0 +1,97 @@
+.despesaLista{
+    display: flex;
+}
+
+.gruposDespesa{
+    display: flex;
+    width: 119vh;
+    height: 79.7vh;
+    border-right: #707070 0.3vh solid;
+}
+
+.tiposDespesa {
+    display: flex;
+    flex-direction: column;      
+    max-height: 79.8vh;      
+    overflow-y: auto;   
+    margin-right: 2vh;
+    padding-bottom: 5vh;
+    margin-left: 2vh;
+}
+
+.tiposTitulo {
+    font-weight: 400;
+    font-size: 5vh;
+    text-align: center;   
+    margin-top: 5vh;
+    margin-left: 4vh;
+}
+    
+.tiposItens{
+    margin-left: 4vh;
+    margin-top: 3vh;
+}
+
+.itemTipo{
+    display: flex;
+    justify-content: space-between;
+    border: 0.3vh solid #7E7E7E;
+    border-radius: 2vh;
+    padding: 2vh;
+    width: 27vw;
+    height: 10vh;
+    margin-left: 2vh;
+    margin-right: 3vh;
+}
+
+.itemTitulo{
+    font-size: 4vh;
+}
+
+
+.grupoTitulo {
+    font-weight: 400;
+    font-size: 5vh;
+    text-align: center; 
+    cursor: pointer;  
+}
+
+.itemGrupo{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.3vh solid #7E7E7E;
+    padding: 2vh;
+    width: 52.8vw;
+    height: 10vh;
+}
+
+.grupoTitulo{
+    font-size: 4vh;
+}
+
+.grupoIcones{
+    margin-top: 2vh;
+}
+
+.imagemSair{
+    margin-top: -1vh;
+}
+
+.adicionarTipo{
+    margin-left: 17vh;
+    width: 40vh;
+}
+
+.iconeDeletar{
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+}
+
+.modal{
+    margin-top: 30vh;
+}
+
+.headerTitle{
+    cursor: pointer;
+}
